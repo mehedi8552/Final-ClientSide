@@ -5,6 +5,7 @@ const HomePage = () => {
     return (
         <Layout>
         <img src={me}  width={700} height={700}  alt="" />
+        
         </Layout>
     );
 };

@@ -7,9 +7,9 @@ const Submitbtn = (props) => {
 
     if (isSubmitbtn === false){
 
-        return <button onClick={props.onClick} className="btn mt-3 btn-success mx-1" text="Submit" > Submit</button>
+        return <button onClick={props.onClick} className=" w-96 ml-10 rounded-xl font-semibold text-white py-2 px-4 bg-green-800 flex justify-center items-center mt-3 btn-success" text="Submit" > Submit</button>
     }else{
-        return <button className="btn mt-3 btn-success mx-5 " text="Submit" ><div className="spinner-border spinner-border-sm " role="status"></div> Processing...</button>
+        return <button className=" w-96 ml-10 rounded-xl font-semibold text-white py-2 px-4 bg-green-800 flex justify-center items-center mt-3 btn-success" text="Submit" ><div className="spinner-border spinner-border-sm " role="status"></div> Processing...</button>
     }
 
 };

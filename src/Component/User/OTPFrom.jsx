@@ -21,10 +21,10 @@ const OTPFrom = () => {
   
 
   return (
-    <div className="container section">
-      <div className="row d-flex justify-content-center">
-        <div className="col-md-5">
-          <div className="card p-5">
+    <div className="">
+      <div className=" h-screen flex justify-center bg-green-200  ">
+        <div className="">
+          <div className=" p-5 bg-green-600 m-16 rounded-xl">
             <h4>Enter Verification Code</h4>
             <p>
               A verification code has been sent to the email address you provide

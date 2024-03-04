@@ -1,7 +1,7 @@
 // ProfilePage.js
 
 import React, { useState } from 'react';
-
+import orange from '../../assets/orange.png'
 function ProfilePage() {
   //const [newProfilePicture, setNewProfilePicture] = useState(null);
   const [newPassword, setNewPassword] = useState('');
@@ -28,15 +28,16 @@ function ProfilePage() {
   };
 
   return (
-    <div className="container vh-100 d-flex justify-content-center align-items-center bg-primary text-white">
+    <div className='h-screen'>
+    <div className="flex w-80 p-4 justify-center items-center mx-auto bg-green-600 rounded-xl m-16">
       <div>
-        <h2>Profile Management</h2>
+        <p className='font-bold flex justify-center text-lg'>Profile Management</p>
         <div className="mt-4">
-          <h3>Change Profile Picture</h3>
+          <p className='font-medium'>Change Profile Picture</p>
           <input type="file" className="form-control" onChange={handleProfilePictureChange} />
         </div>
         <div className="mt-4">
-          <h3>Change Password</h3>
+          <p className='font-medium'>Change Password</p>
           <form onSubmit={handlePasswordChange}>
             <div className="mb-3">
               <label htmlFor="newPassword" className="form-label">New Password:</label>
@@ -60,7 +61,7 @@ function ProfilePage() {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-light" disabled={loading}>
+            <button type="submit" className="btn btn-light mb-2" disabled={loading}>
               {loading ? 'Changing Password...' : 'Change Password'}
             </button>
           </form>
@@ -68,6 +69,8 @@ function ProfilePage() {
         {message && <p className="mt-4">{message}</p>}
       </div>
     </div>
+    </div>
+
   );
 }
 

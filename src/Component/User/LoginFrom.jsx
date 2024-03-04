@@ -19,10 +19,10 @@ const loginFrom = () => {
         }
       }
     return (
-        <div className="container section m-8 ">
-      <div className="row d-flex justify-content-center ">
-        <div className="col-md-5">
-          <div className="card p-5">
+        <div className=" h-screen flex justify-center items-center bg-green-200 p-4 ">
+         <div className="flex justify-content-center bg-green-600 rounded-xl">
+        <div >
+          <div className=" p-5">
             <h4 className="text-center">Enter Your Information</h4>
             <p className="text-center">
               A verification code will be sent to the email address you provide
